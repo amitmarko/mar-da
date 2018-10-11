@@ -1,0 +1,249 @@
+.navigation{
+    background-color: $color-dark-1;
+    color: white;
+    font-size: 1.7rem;
+    height: 7rem;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
+
+   @include respond(tab-land){
+       font-size: 1.5rem;
+   }
+
+   @include respond(tab-port){
+    font-size: 1.2rem;
+   }
+
+   @include respond(phone){
+    font-size: 2rem;
+   }
+
+
+    &__list{
+        list-style: none ;
+        display: flex;
+        justify-content:center;
+        height: 100%;
+        width: 54%;
+        text-align: center;
+    }
+
+    &__contectus{
+        height: 100%;
+        background-color: $color-primary;
+        padding: 0.8rem 1.1rem;
+        border-radius: 1rem;
+        color: $color-dark-1;
+        box-shadow: 0 0 .4rem .4rem rgba( $color-primary, .2);
+    }
+
+    &__item{
+        cursor: pointer;
+        align-self:center;
+        transition: all .2s;
+        backface-visibility: hidden;
+        border-bottom:2px solid transparent;
+        text-decoration: none;
+        color: inherit;
+        font-weight: 300;
+
+        &:last-child{
+            color: $color-primary;
+        }
+        
+        &:not(:last-child){
+           padding-right: 5rem;
+        }
+
+        &:hover{
+            transform: scale(1.05) translateY(-.1rem);
+            color: $color-primary;
+        }
+    }
+
+    &__phone-icon{
+        margin-right: 1rem;
+        height: 80%;
+        align-self: center;
+    }
+
+    &__logo{
+        width: 23%;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        border-left: 1px solid black;
+    }
+
+    &__image{
+        @include absCenter;   
+        @include respond(tab-port){
+            height: 80%;
+        }
+    }
+
+    &__content{
+        width: 23%;
+        height: 100%;
+        border-right: 1px solid black;
+
+         &-buzz{
+            display: flex;
+            justify-content:center;
+            height: 100%;
+
+            &:hover .navigation__phone-icon{
+                -webkit-animation-name: buzzOut;
+                animation-name: buzzOut;
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+                -webkit-animation-timing-function: linear;
+                animation-timing-function: linear;
+                -webkit-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+             }
+         }
+
+    }
+
+    &__phone{
+        align-self:center;
+        & > span{
+            display: block;
+
+        }
+    }
+
+    &__checkbox-small {
+        display: none;
+    }
+
+    &__background-small{
+        width: 0;
+        visibility: hidden;
+    }
+
+}
+
+@include respond(phone){
+    .navigation{
+        position: relative;
+
+        &__list{
+            width: 0;
+            visibility: hidden;  
+        }
+
+        &__logo{
+            width: 50%;
+            border: none;
+        }
+
+        &__content{
+            width: 50%;
+            border: none;
+        }
+
+        &__item{
+          padding-right: 0 !important;
+          padding-bottom: 1rem;
+        }
+
+        &__icon-small{
+                margin-top: 2.8rem;
+                position: relative;
+         
+                &,
+                &::before,
+                &::after{
+                 width: 3rem;
+                 height: 2px;
+                 background-color: $color-dark-1;
+                 display: inline-block;
+         
+                }
+         
+                &::before,
+                &::after{
+                     content: '';
+                     position: absolute;
+                     left: 0;
+                     transition:  all .2s;
+                }
+             
+                &::before { top: -.9rem; }
+                &::after { top: .8rem; }
+        }
+
+        &__button-small{
+            background-color: $color-primary;
+            width: 15rem;
+            height: 8rem;
+            position: absolute;
+            top: 157%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            -webkit-clip-path: circle(50% at 50% 0%);
+            clip-path: circle(50% at 50% 0%);
+            z-index: 1000;
+            text-align: center;  
+            cursor: pointer;
+            transition: all .2s linear .03s;
+        }
+
+        &__background-small{
+            height: 0%;
+            transition: all .2s linear .03s;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            background-color: $color-dark-1;
+            left: 50%;
+            width: 100%;
+            top: 0;   
+            z-index: 1000;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+
+        &__checkbox-small:checked ~ &__background-small{
+            height: auto;  
+            visibility: visible;
+            padding-top: 27rem;
+            padding-bottom: 1.5rem;         
+        }
+
+        &__checkbox-small:checked ~ &__button-small{
+            top:29.81rem;
+        }
+
+
+        &__button-small:hover &__icon-small::after{
+            top: 1rem;
+        }
+    
+        &__button-small:hover &__icon-small::before{
+            top: -1rem;
+        }
+
+        &__checkbox-small:checked ~ &__button-small &__icon-small{
+            background-color: transparent;
+          }
+      
+        &__checkbox-small:checked ~ &__button-small &__icon-small::before{
+              top: 0;
+              transform: rotate(135deg); 
+        }
+      
+        &__checkbox-small:checked ~ &__button-small &__icon-small::after{
+              top: 0;
+              transform: rotate(-135deg); 
+        }
+
+    }
+
+
+}
+

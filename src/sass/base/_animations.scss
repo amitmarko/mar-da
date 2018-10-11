@@ -1,0 +1,103 @@
+@keyframes buzzOut {
+    10% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    20% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+    30% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    40% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+    50% {
+      -webkit-transform: translateX(2px) rotate(1deg);
+      transform: translateX(2px) rotate(1deg);
+    }
+    60% {
+      -webkit-transform: translateX(-2px) rotate(-1deg);
+      transform: translateX(-2px) rotate(-1deg);
+    }
+    70% {
+      -webkit-transform: translateX(2px) rotate(1deg);
+      transform: translateX(2px) rotate(1deg);
+    }
+    80% {
+      -webkit-transform: translateX(-2px) rotate(-1deg);
+      transform: translateX(-2px) rotate(-1deg);
+    }
+    90% {
+      -webkit-transform: translateX(1px) rotate(0);
+      transform: translateX(1px) rotate(0);
+    }
+    100% {
+      -webkit-transform: translateX(-1px) rotate(0);
+      transform: translateX(-1px) rotate(0);
+    }
+  }
+
+  @keyframes changeImages {
+    0% {
+          background-image: linear-gradient( 
+            to right bottom, 
+            rgba($color-grey-1, 0.5), 
+            rgba($color-grey-2, 0.5)), 
+            url(../img/rawpixel-780494-unsplash.jpg);
+    }
+    45% {
+        background-image: linear-gradient( 
+            to right bottom, 
+            rgba($color-grey-1, 0.5), 
+            rgba($color-grey-2, 0.5)), 
+            url(../img/rawpixel-780494-unsplash.jpg);   
+            
+          }
+    55% {
+        background-image: linear-gradient( 
+            to right bottom, 
+            rgba($color-grey-1, 0.5), 
+            rgba($color-grey-2, 0.5)), 
+            url(../img/rawpixel-665368-unsplash.jpg);
+    }
+    100% {
+        background-image: linear-gradient( 
+            to right bottom, 
+            rgba($color-grey-1, 0.5), 
+            rgba($color-grey-2, 0.5)), 
+            url(../img/rawpixel-665368-unsplash.jpg);
+    }
+
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-15rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(15rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInButtom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
