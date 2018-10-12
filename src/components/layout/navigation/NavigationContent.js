@@ -9,7 +9,7 @@ class NavigationContent extends Component {
                     <img src={require('../../../img/icons8-phone-50.png')} alt="phone" className="navigation__phone-icon" />
                     <p className="navigation__phone">
                         לפגישת התייעצות
-                      <span>04-6342618</span>
+                      <a href="tel:04-6342618">04-6342618</a>
                     </p>
                 </div>
             </div>
