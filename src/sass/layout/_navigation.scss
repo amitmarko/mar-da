@@ -110,8 +110,10 @@
 
     &__phone{
         align-self:center;
-        & > span{
+        & > a{
             display: block;
+            color: white;
+            text-decoration: none;
 
         }
     }
