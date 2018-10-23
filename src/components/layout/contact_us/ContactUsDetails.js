@@ -9,7 +9,7 @@ class ContactUsDetails extends Component {
 
                     <li className='details__item'>
                         <img src={require('../../../img/address-icon.png')} className='details__item-icon' />
-                        <span className='details__item-info rtl'>ברנר 18/4 נתניה 4244122</span>
+                        <span className='details__item-info rtl'>הרצל 8 חדרה</span>
                     </li>
 
 
@@ -20,7 +20,7 @@ class ContactUsDetails extends Component {
 
                     <li className='details__item'>
                         <img src={require('../../../img/email-icon.png')} className='details__item-icon' />
-                        <span className='details__item-info'>zvikamar@gmail.com</span>
+                        <span className='details__item-info'>madah@bezeqint.net</span>
                     </li>
 
                       <li className='details__item'>
