@@ -15,3 +15,17 @@
         margin-bottom: 5rem !important;
     }
 }
+
+.u-padding-bottom-medium{
+    padding-bottom: 4rem !important;
+    @include respond(tab-port){
+        padding-bottom: 3rem !important;
+    }
+}
+.u-padding-bottom-big{
+    padding-bottom: 8rem !important;
+
+    @include respond(tab-port){
+        padding-bottom: 5rem !important;
+    }
+}
