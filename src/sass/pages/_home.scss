@@ -1,5 +1,9 @@
 .section-about {
     background-color: $color-grey-3;
+    &__paragraph-box {
+        padding: 1rem $padding-primary 3rem $padding-primary;
+        text-align: center;
+    }
 }
 
 .section-service {

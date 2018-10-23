@@ -1,31 +1,38 @@
-.rtl{
-    direction:rtl;
+.rtl {
+    direction: rtl;
 }
 
-.u-maring-bottom-medium{
+.u-maring-bottom-medium {
     margin-bottom: 4rem !important;
-    @include respond(tab-port){
+    @include respond(tab-port) {
         margin-bottom: 3rem !important;
     }
 }
-.u-maring-bottom-big{
-    margin-bottom: 8rem !important;
 
-    @include respond(tab-port){
+.u-maring-bottom-big {
+    margin-bottom: 8rem !important;
+    @include respond(tab-port) {
         margin-bottom: 5rem !important;
     }
 }
 
-.u-padding-bottom-medium{
+.u-padding-bottom-medium {
     padding-bottom: 4rem !important;
-    @include respond(tab-port){
+    @include respond(tab-port) {
         padding-bottom: 3rem !important;
     }
 }
-.u-padding-bottom-big{
-    padding-bottom: 8rem !important;
 
-    @include respond(tab-port){
+.u-padding-bottom-big {
+    padding-bottom: 8rem !important;
+    @include respond(tab-port) {
         padding-bottom: 5rem !important;
+    }
+}
+
+.u-padding-top-small {
+    padding-top: 2.5rem !important;
+    @include respond(tab-port) {
+        padding-top: 2rem !important;
     }
 }
