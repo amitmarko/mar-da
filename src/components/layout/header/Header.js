@@ -5,10 +5,10 @@ class Header extends Component {
     return (
       <header className='header'>
         <h1 class="header__primary" dir="rtl">
-          מרקוביץ' דהן ושות' - שירותי ראית חשבון,
+          משרד מרקוביץ' דהן ושות' -
         </h1>
         <h3 class="header__sub" dir="rtl">
-          אנחנו מתמחים בחברות קטנות וגדולות.
+          שירותי ראית חשבון.
           </h3>
       </header>
     )
