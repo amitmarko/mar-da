@@ -4,7 +4,7 @@ class About extends Component {
     render() {
         return (
             <section className='section-about'>
-                <h2 className="heading-secondary u-maring-bottom-medium">
+                <h2 className="heading-secondary u-padding-bottom-medium">
                     קצת עלינו
                 </h2>
             </section>
