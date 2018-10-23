@@ -4,6 +4,7 @@ import Header from '../../layout/header/Header';
 import OurService from './our_service/OurService';
 import About from './about/About';
 import ContactUs from '../../layout/contact_us/ContactUs'
+import Customers from './customers/customers'
 import Footer from '../../layout/footer/Footer'
 
 class Home extends Component {
@@ -15,6 +16,7 @@ class Home extends Component {
                 <main>
                     <About />
                     <OurService />
+                    <Customers />
                     <ContactUs />
                 </main>
                 <Footer />

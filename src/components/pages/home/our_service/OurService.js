@@ -4,9 +4,9 @@ class OurService extends Component {
     render() {
         return (
             <section className='section-service'>
-                 <h2 className="heading-secondary u-padding-bottom-medium">
+                <h2 className="heading-secondary u-padding-bottom-medium u-padding-top-small">
                     השירותים שלנו
-                </h2> 
+                </h2>
             </section>
         )
     }
