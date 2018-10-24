@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Navigation from '../../layout/navigation/Navigation';
 import Header from '../../layout/header/Header';
-import OurService from './our_service/OurService';
+import Service from './service/Service';
 import About from './about/About';
 import ContactUs from '../../layout/contact_us/ContactUs'
-import Customers from './customers/customers'
+import Customers from './customers/Customers'
 import Footer from '../../layout/footer/Footer'
 
 class Home extends Component {
@@ -15,7 +15,7 @@ class Home extends Component {
                 <Header />
                 <main>
                     <About />
-                    <OurService />
+                    <Service />
                     <Customers />
                     <ContactUs />
                 </main>
