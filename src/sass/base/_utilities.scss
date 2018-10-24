@@ -2,14 +2,15 @@
     direction: rtl;
 }
 
-.u-maring-bottom-medium {
+
+.u-margin-bottom-medium {
     margin-bottom: 4rem !important;
     @include respond(tab-port) {
         margin-bottom: 3rem !important;
     }
 }
 
-.u-maring-bottom-big {
+.u-margin-bottom-big {
     margin-bottom: 8rem !important;
     @include respond(tab-port) {
         margin-bottom: 5rem !important;
