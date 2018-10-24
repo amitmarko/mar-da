@@ -7,7 +7,9 @@ class FooterContentLeft extends Component {
 
             <div className='footer__content-left'>
                 {/* <NavigationListBig /> */}
-                AAA
+                <p className='rtl'>
+                    טלפון ליצירת קשר: 04-6342618
+                </p>
             </div>
         )
     }
