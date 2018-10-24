@@ -6,10 +6,10 @@ class ContactUsMap extends Component {
         return (
             <div className='map'>
                 <iframe
-                    frameborder="0"
+                    frameBorder="0"
                     src={`https://www.google.com/maps/embed/v1/place?key=${GOOGLE_API}
                       &q=Herzl+St+8,hadera+israel`}
-                    allowfullscreen>
+                    allowFullScreen>
                 </iframe>
             </div>
         )

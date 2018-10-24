@@ -25,10 +25,10 @@ class NavigationList extends Component {
     render() {
         return (
             <div className="navigation__list-small">
-                <input type="checkbox" class="navigation__checkbox-small" id='navi-toggle' />
+                <input type="checkbox" className="navigation__checkbox-small" id='navi-toggle' />
                 {this.renderList('navigation__background-small')}
-                <label for="navi-toggle" class="navigation__button-small">
-                    <span class="navigation__icon-small">
+                <label htmlFor="navi-toggle" className="navigation__button-small">
+                    <span className="navigation__icon-small">
                         &nbsp;
                 </span>
                 </label>

@@ -8,7 +8,7 @@ class ContactUs extends Component {
         return (
             <section className='section-contact-us' id='contact-us'>
 
-                <h2 className='heading-secondary u-maring-bottom-medium'>
+                <h2 className='heading-secondary u-margin-bottom-medium'>
                     צור קשר
                 </h2>
 
