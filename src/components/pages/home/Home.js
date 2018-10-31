@@ -5,7 +5,8 @@ import Service from './service/Service';
 import About from './about/About';
 import ContactUs from '../../layout/contact_us/ContactUs'
 import Customers from './customers/Customers'
-import Footer from '../../layout/footer/Footer'
+import Footer from '../../layout/footer/Footer';
+import ContactBtn from '../../layout/contactBtn/contactBtn';
 
 class Home extends Component {
     render() {
@@ -14,6 +15,7 @@ class Home extends Component {
                 <Navigation />
                 <Header />
                 <main>
+                    <ContactBtn />
                     <About />
                     <Service />
                     <Customers />
