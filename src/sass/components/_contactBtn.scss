@@ -1,0 +1,41 @@
+.ContactBtn {
+    position: fixed;
+    transition: all .2s;
+    transform: rotate(270deg);
+    background-color: $color-dark-1;
+    left:-3.5rem;
+    top: 50%;
+    padding: .8rem 1.8rem;
+    border-radius: 0 0 10px 10px;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    animation: contactBtnMove 5s linear 1s alternate infinite;
+    &:hover{
+        transform: rotate(270deg) scale(1.1);
+        color: $color-primary;
+    }
+
+    @include respond(phone){
+      visibility: hidden;
+      display: none;
+    }
+}
+
+@keyframes contactBtnMove{
+  0%{
+    top: 50%;
+  }
+  80%{
+      top: 50%;
+  }
+
+  90%{
+    top: 49%;
+  }
+
+  100%{
+    top: 51%;
+  }
+}
