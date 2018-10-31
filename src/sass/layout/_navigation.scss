@@ -114,8 +114,9 @@
             display: block;
             color: white;
             text-decoration: none;
-
+            cursor: inherit;
         }
+        cursor: pointer;
     }
 
     &__checkbox-small {

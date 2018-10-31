@@ -37,10 +37,7 @@
         color: #20232a;
         // text-shadow: 2px 0 0 #61dafb, -2px 0 0 #61dafb, 0 2px 0 #61dafb, 0 -2px 0 #61dafb, 1px 1px #61dafb, -1px -1px 0 #61dafb, 1px -1px 0 #61dafb, -1px 1px 0 #61dafb;
         text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-
-        &:hover{
-            transform: scale(1.05) translateY(-.1rem);
-        }
+        cursor: default;
     }
 
     &__primary{
