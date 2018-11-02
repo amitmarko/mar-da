@@ -1,0 +1,43 @@
+.service_items {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5rem;
+
+    @include respond(tab-port){
+        width: 40%;
+    }
+
+    @include respond(phone) {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    &__header {
+        font-size: 3rem;
+        &:after {
+            content: "";
+            display: block;
+            border-top: 2px solid $color-primary;
+            margin-top: -5px;
+            width: 100%;
+            border-radius: 3px;
+            margin-bottom: 2rem;
+        }
+    }
+    &__description {
+        font-size: 1.6rem;
+        white-space: pre-line;
+        height: 6rem;
+    }
+    &__header,
+    &__description {
+        display: inline-block;
+        // animation: fadeIn 2s ease-out;
+    }
+    &__image {
+        margin-top: 2rem;
+        width: 7rem;
+    }
+}

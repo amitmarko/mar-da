@@ -13,13 +13,17 @@
 @import "layout/contact_us";
 @import "layout/customers";
 @import "layout/service";
-
+@import "layout/service_nav";
+@import "layout/service_items";
 
 @import "components/btn";
 @import "components/contactBtn";
 @import "components/form";
 @import "components/map";
+@import "components/composition";
+
 
 @import "pages/home";
+@import "pages/our_service";
 
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');

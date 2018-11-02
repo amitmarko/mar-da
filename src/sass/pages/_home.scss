@@ -1,38 +1,37 @@
 .section-about {
-    background-color: $color-grey-3;
+    // background-color: $color-grey-4;
     &__paragraph-box {
         padding: 1rem $padding-primary 3rem $padding-primary;
         text-align: center;
     }
+    animation: moveInButtom .4s ease-out .5s;
+    animation-fill-mode: backwards;
 }
 
 .section-service {
     padding-bottom: $padding-primary;
+    background-color: $color-grey-3;
     &__header {
         display: flex;
-        justify-content: center;
-        &>* {
-            &:after{
-                content: "";
-                display: block;
-                border-top: 5px solid $color-primary;
-                margin-top: -12px;
-                width: 600px;
-                border-radius: 3px;
-
-                @include respond(tab-land){
-                    width: 500px;
-                }
-
-                @include respond(tab-port){
-                    width: 450px;
-                }
-
-                @include respond(phone){
-                    width: auto;
-                }
-            }
-        }
+        justify-content: center; // &>* {
+        //     &:after {
+        //         content: "";
+        //         display: block;
+        //         border-top: 5px solid #88969c;
+        //         margin-top: -12px;
+        //         width: 600px;
+        //         border-radius: 3px;
+        //         @include respond(tab-land) {
+        //             width: 500px;
+        //         }
+        //         @include respond(tab-port) {
+        //             width: 450px;
+        //         }
+        //         @include respond(phone) {
+        //             width: auto;
+        //         }
+        //     }
+        // }
     }
 }
 

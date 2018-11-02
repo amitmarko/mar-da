@@ -1,0 +1,30 @@
+.service_nav{
+    // width: auto;
+    text-align: right;
+    // background-color: $color-grey-4;
+
+    &__list{
+       direction: rtl;
+       list-style: none;
+       border-left: 3px solid $color-primary;
+       padding: .5rem 3rem;
+       text-align: center;
+
+       @include respond(phone){
+           border: none;
+       }
+    }
+
+    &__item{
+        margin: 1.5rem 0;
+        font-size: 2rem;
+        cursor: pointer;
+        font-weight: 700;
+        // width: 20rem;
+
+        &:hover{
+            color: $color-primary !important;
+        }
+    }
+
+}

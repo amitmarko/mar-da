@@ -4,17 +4,15 @@ import NavigationListSmall from './NavigationListSmall'
 import NavigationListBig from './NavigationListBig'
 import NavigationLogo from './NavigationLogo'
 
-class Navigation extends Component {
-    render() {
-        return (
-            <nav className='navigation'>
-                <NavigationContent />
-                <NavigationListBig />
-                <NavigationListSmall />
-                <NavigationLogo />
-            </nav>
-        )
-    }
+const Navigation = (props) => {
+    return (
+        <nav className='navigation'>
+            <NavigationContent />
+            <NavigationListBig page={props.page} />
+            <NavigationListSmall />
+            <NavigationLogo />
+        </nav>
+    )
 }
 
 export default Navigation;

@@ -12,8 +12,8 @@ class Home extends Component {
     render() {
         return (
             <div className='home'>
-                <Navigation />
-                <Header />
+                <Navigation page='home' />
+                <Header image='image-1'/>
                 <main>
                     <ContactBtn />
                     <About />

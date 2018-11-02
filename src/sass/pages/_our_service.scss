@@ -1,0 +1,27 @@
+.our-service {
+}
+
+.section-our-service {
+    height: 100vh;
+    min-height: 700px;
+    animation: fadeIn 2s ease-out;
+
+    @include respond(tab-port){
+        min-height: 0;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+}
+
+.our-service-main {
+    display: flex;
+    justify-content: center;
+    
+    // @include respond(tab-port){
+    //     justify-content: space-between;
+    // }
+
+    @include respond(phone) {
+        flex-direction: column-reverse;
+    }
+}

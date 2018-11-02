@@ -6,8 +6,12 @@
     flex-direction: column;
     padding: 1rem $padding-primary;
     text-align: right;
+    
     @include respond(tab-land) {
         width: 55%;
+    }
+    @include respond(tab-port){
+        width:50;
     }
     @include respond(phone) {
         width: 100%;
@@ -101,9 +105,15 @@
 .details {
     width: 40%;
     padding: 1rem $padding-primary;
+
     @include respond(tab-land) {
         width: 45%;
     }
+
+    @include respond(tab-port){
+        width: 50%;
+    }
+
     @include respond(phone) {
         width: 100%;
     }

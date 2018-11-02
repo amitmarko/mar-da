@@ -14,7 +14,7 @@ class Customers extends Component {
                     <CustomersImage imageName='icons8-statistics-50' header='חברות' />
                     <CustomersImage imageName='icons8-apartment-50' header='נדלן' />
                     <CustomersImage imageName='icons8-laptop-50' header='הייטק' />
-                    <CustomersImage imageName='icons8-training-50' header='ייבוא ויצוא' />
+                    <CustomersImage imageName='icons8-airplane-mode-on-50' header='ייבוא ויצוא' />
                     <CustomersImage imageName='icons8-diamond-50' header='יהלומים' />
                     <CustomersImage imageName='icons8-connectivity-and-help-50' header='עמותות ומלכר"ים' />
                     <CustomersImage imageName='icons8-food-50' header='מזון' />
