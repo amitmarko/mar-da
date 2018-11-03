@@ -7,7 +7,7 @@ class Customers extends Component {
     render() {
         return (
             <section className='section-customers'>
-                <h2 className="heading-secondary-shadow__white u-padding-bottom-medium u-padding-top-small">
+                <h2 className="heading-secondary heading-secondary-shadow__white u-padding-bottom-medium u-padding-top-small">
                     סוגי לקוחות
                </h2>
                 <div className='customers'>

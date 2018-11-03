@@ -15,7 +15,7 @@ class ServiceMain extends Component {
         return (
             <section className='section-our-service' id='main'>
                 <div className='section-service__header'>
-                    <h2 className="heading-secondary-color__primary u-margin-bottom-medium u-padding-top-small">
+                    <h2 className="heading-secondary heading-secondary-primary u-margin-bottom-medium u-padding-top-small">
                         השירותים שלנו
                     </h2>
                 </div>

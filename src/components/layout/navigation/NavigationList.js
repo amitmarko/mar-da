@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-class NavigationListBig extends Component {
+class NavigationList extends Component {
+
+    state = {
+        showClass: '',
+    }
 
 
     scrollToContactUs = () => {
         document.querySelector("#contact-us").scrollIntoView({ behavior: 'smooth', block: 'start' });
+        this.props.navClick();
+        this.setState({ showClass: '' });
     }
 
     renderColor = () => {
@@ -15,10 +21,25 @@ class NavigationListBig extends Component {
         return { colorHome, colorOurService };
     }
 
+    renderList = () => {
+
+    }
+
+    componentDidUpdate = (prevProps) => {
+        if (this.props.menuClick !== prevProps.menuClick) {
+            const { showClass } = this.state;
+            if (showClass === '') {
+                this.setState({ showClass: 'navigation__visible' });
+            } else {
+                this.setState({ showClass: '' });
+            }
+        }
+    }
+
     render() {
         const { colorHome, colorOurService } = this.renderColor();
         return (
-            <div className='navigation__list'>
+            <div className={`navigation__list ${this.state.showClass}`}>
                 <Link to="#ContactUs" className="navigation__item" onClick={this.scrollToContactUs}>
                     <span className="navigation__contectus"> צור קשר </span>
                 </Link>
@@ -27,9 +48,8 @@ class NavigationListBig extends Component {
                 <Link to="/ourService" className="navigation__item" style={{ color: colorOurService }}>השירותים שלנו</Link>
                 <Link to="/" className={`navigation__item`} style={{ color: colorHome }}>עמוד הבית</Link>
             </div>
-
         )
     }
 }
 
-export default withRouter(NavigationListBig);
+export default NavigationList;

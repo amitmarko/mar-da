@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 import Slider from "react-slick";
 
+
+const headers = [
+    {
+      header:''
+    }
+]
+
 class Header extends Component {
 
   render() {
@@ -18,7 +25,7 @@ class Header extends Component {
       swipe: true,
     };
 
-    const { image } = this.props;;
+    const { image } = this.props;
     return (
       <div className='header'>
         {/* <Slider {...settings}> */}

@@ -14,7 +14,7 @@ class Service extends Component {
         return (
             <section className='section-service'>
                 <div className='section-service__header'>
-                    <h2 className="heading-secondary-shadow__white u-margin-bottom-medium u-padding-top-small">
+                    <h2 className="heading-secondary heading-secondary-grey u-margin-bottom-medium u-padding-top-small">
                         השירותים שלנו
                 </h2>
                 </div>

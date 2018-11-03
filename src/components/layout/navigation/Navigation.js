@@ -1,18 +1,36 @@
 import React, { Component } from 'react';
 import NavigationContent from './NavigationContent'
-import NavigationListSmall from './NavigationListSmall'
-import NavigationListBig from './NavigationListBig'
+import NavigationList from './NavigationList'
 import NavigationLogo from './NavigationLogo'
+import NavigationBtn from './NavigationBtn';
 
-const Navigation = (props) => {
-    return (
-        <nav className='navigation'>
-            <NavigationContent />
-            <NavigationListBig page={props.page} />
-            <NavigationListSmall />
-            <NavigationLogo />
-        </nav>
-    )
+class Navigation extends React.Component {
+
+    state = {
+        menuClick: false,
+        btnPosition: '',
+        iconChange: '',
+    }
+
+    navClick = () => {
+        this.setState({ btnPosition: '' });
+        this.setState({ iconChange: '' });
+    }
+
+    render() {
+        const {
+            props, state
+        } = this;
+
+        return (
+            <nav className='navigation'>
+                <NavigationContent />
+                <NavigationList page={props.page} menuClick={state.menuClick} navClick={this.navClick} />
+                <NavigationBtn menuClick={menuClick => this.setState({ menuClick })} />
+                <NavigationLogo />
+            </nav>
+        )
+    }
 }
 
 export default Navigation;
