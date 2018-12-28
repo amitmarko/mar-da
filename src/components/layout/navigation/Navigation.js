@@ -18,10 +18,7 @@ class Navigation extends React.Component {
     }
 
     render() {
-        const {
-            props, state
-        } = this;
-
+        const { props, state } = this;
         return (
             <nav className='navigation'>
                 <NavigationContent />

@@ -34,18 +34,18 @@
         width: 15rem;
         height: 15rem;
         outline-offset: 1rem;
-        outline: 5px solid #6f7c83;
+        outline: 5px solid $color-grey-5;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #6f7c83;
+        background-color: $color-grey-5;
         transition: all .2s;
         color: white;
         box-shadow: 0 .6rem 1rem rgba(0, 0, 0, 0.3);
         &:hover {
             transform: scale(1.05);
-            outline: 5px solid #6f7c83;
+            outline: 5px solid $color-grey-5;
         }
     }
     &__image {

@@ -7,30 +7,24 @@ body {
 
 .heading-secondary {
     text-align: center;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 700;
 }
 
-.heading-secondary-shadow__black,
-.heading-secondary-shadow__white,
-.heading-secondary-color__primary {
+.heading-secondary-grey {
+    color: $color-grey-5;
     font-size: 6rem;
-    font-weight: 700;
-    text-align: center;
-}
-
-.heading-secondary-shadow__black {
-    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-    color: black;
 }
 
 .heading-secondary-shadow__white {
     text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
     color: white;
+    font-size: 6rem;
 }
 
-.heading-secondary-color__primary {
+.heading-secondary-primary {
     color: $color-primary;
+    font-size: 6rem;
 }
 
 .paragraph {

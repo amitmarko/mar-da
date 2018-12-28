@@ -13,7 +13,7 @@ class Home extends Component {
         return (
             <div className='home'>
                 <Navigation page='home' />
-                <Header image='image-1'/>
+                <Header page='home'/>
                 <main>
                     <ContactBtn />
                     <About />

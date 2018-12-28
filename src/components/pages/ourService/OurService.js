@@ -15,7 +15,7 @@ class OurService extends Component {
         return (
             <div className='our_service'>
                 <Navigation page='ourService' />
-                <Header image='image-2'/>
+                <Header page='ourService'/>
                 <main>
                     <ContactBtn />
                     <ServiceMain serviceNumber={serviceNumber} />
